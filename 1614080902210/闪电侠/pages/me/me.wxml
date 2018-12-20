@@ -1,0 +1,25 @@
+<view class='all'>
+  <view class='all1'> 
+  
+  
+  </view>
+  <view class='all2'>
+    <view class="bag1" bindtap="doUpload">
+        <image src='/images/钱包.png' style='width:18px;height:18px ;margin-left:10px; padding-top:5px;' mode='widthFix'/>
+        <text style='margin-left:10px' >我的钱包</text>
+    </view>
+  </view>
+  <view class='all3'>
+      <view class="bag2" bindtap="doUpload">
+        <image src='/images/账单.png' style='width:18px;height:18px ;margin-left:10px; padding-top:5px;' mode='widthFix'/>
+        <text style='margin-left:10px' >我的订单</text>
+    </view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+        <view class="bag3" bindtap="doUpload">
+        <image src='/images/客服.png' style='width:18px;height:18px ;margin-left:10px; padding-top:5px;' mode='widthFix'/>
+        <text style='margin-left:10px' >联系客服</text>
+    </view>
+  
+  </view>
+</view>

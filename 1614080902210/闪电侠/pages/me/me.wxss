@@ -1,0 +1,30 @@
+.all{
+  background-color:#DCDCDC;
+  height:600px;
+}
+.all1{
+  background-color:#ffffff;
+  height:100px;
+}
+.all2{
+  background-color:#ffffff;
+  height:40px;
+  margin-top: 10px;
+  flex-direction: column;
+  display: flex; 
+}
+.all3{
+  background-color:#ffffff;
+  height: 80px;
+  margin-top: 10px;
+}
+.bag1{
+  top:10px;
+}
+.bag2{
+  margin-bottom: 10px;
+
+}
+.bag3{
+  margin-top:3px;
+}

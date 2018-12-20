@@ -1,0 +1,82 @@
+<!--pages/zuo/zuo.wxml-->
+<!--pages/mai/mai.wxml-->
+<view class='all'>
+  <view class='all1'>
+    <view class='content'>
+      <view class='content1'>
+        <view class='{{currentid==1?"select":"select1"}}' data-id="1" bindtap='select'>
+          <view class='zi'>快递</view>
+        </view>
+        <view class='{{currentid==2?"select":"select1"}}' data-id="2" bindtap='select'>
+          <view class='zi'>文件</view>
+        </view>
+        <view class='{{currentid==3?"select":"select1"}}' data-id="3" bindtap='select'>
+          <view class='zi'>钥匙</view>
+        </view>
+      </view>
+      <view class='content2'>
+        <view class='{{currentid==4?"select":"select1"}}' data-id="4" bindtap='select'>
+          <view class='zi'>礼物</view>
+        </view>
+        <view class='{{currentid==5?"select":"select1"}}' data-id="5" bindtap='select'>
+          <view class='zi'>包裹</view>
+        </view>
+        <view class='{{currentid==6?"select":"select1"}}' data-id="6" bindtap='select'>
+          <view class='zi'>其他</view>
+        </view>
+      </view>
+    </view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+    <view class='section'>
+      <view class='section1'>
+        <input bindinput='bindKeyInput' placeholder='请把取件信息备注至此处' />
+      </view>
+      <view class='section2'>
+        <image src='{{imgUrl}}' style='width:40px;height:40px;' bindtap="bindViewTap" type="submit"></image>
+        <image wx:for="{{avatarUrl}}" wx:key="unique" src="{{item}}" style='width:40px;height:40px'></image>
+      </view>
+    </view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+
+    <view class='weight'>
+      <image src='/images/体重.png' style='width:23px;height:23px'></image>重量(kg)
+      <view>
+        <slider selected-color='#109ee0' bindchange="sliderchanges</slider>" value="1" min="0" max="50" show-value/>
+      </view>
+    </view>
+
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+    <view style='height:1px;background-color:#d7d9db;opacity:0.2'></view>
+
+    <view class='weight'>
+      <image src='/images/设定原价.png' style='width:23px;height:23px'></image>本单小费
+      <view>
+        <slider selected-color='#109ee0' bindchange="sliderchanges</slider>" value="3" min="3" max="50" show-value/>
+      </view>
+    </view>
+  </view>
+
+  <view class='all2'>
+    <view class='dingwei'>
+      <image src='/images/定位.png' style='width:23px;height:23px'></image>
+      <text class='kongge'>取</text>
+      <view class='text'>
+        <input bindinput='bindKeyInput' placeholder='必须告诉TA取货地址' />
+      </view>
+    </view>
+    <view class='xuxian'></view>
+    <view class='dingwei1'>
+      <image src='/images/定位1.png' style='width:23px;height:23px'></image>
+      <text class='kongge'>收</text>
+      <view class='text'>
+        <input bindinput='bindKeyInput' placeholder='必须告诉TA收货地址' />
+      </view>
+    </view>
+  </view>
+  
+  <view class='all3'>
+    </view>
+
+</view>

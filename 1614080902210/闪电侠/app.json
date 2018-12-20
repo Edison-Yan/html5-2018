@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/qu/qu",
+    "pages/song/song",
+    "pages/mai/mai",
+    "pages/zuo/zuo",
+    "pages/login/login"
+
+    
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#109ee0",
+    "navigationBarTitleText": "闪电侠",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#00BFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_1.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "会员",
+        "iconPath": "images/me_1.png",
+        "selectedIconPath": "images/me.png"
+      }
+      
+    ]
+  }
+}

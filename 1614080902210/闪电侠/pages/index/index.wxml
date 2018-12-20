@@ -1,0 +1,26 @@
+<view class='content'>
+<view class='pdd'> 
+  <map id="map" longitude="113.6081600000" latitude="23.5278900000" scale='16' controls='{{controls}}' bindcontroltap='controltap' markers='{{markers}}' bindmarkertap='markertap' polyline='{{polyline}}' bindregionchange='regionchange' show-location style='width:100%;height:100vh;'>
+    <cover-view class="nav">
+        <cover-view class='nav-item'>
+          <cover-image src='/images/帮我取.png' style='width:45px;height:43px;' bindtap='navigateBtn1'></cover-image>
+          <cover-view>帮我取</cover-view>
+        </cover-view>
+
+        <cover-view class="nav-item">
+          <cover-image src='/images/帮我送.png' style='width:45px;height:43px;' bindtap='navigateBtn2'></cover-image>
+          <cover-view>帮我送</cover-view>
+        </cover-view>
+
+        <cover-view class="nav-item">
+          <cover-image src='/images/帮我买.png' style='width:45px;height:43px;' bindtap='navigateBtn3'></cover-image>
+          <cover-view>帮我买</cover-view>
+        </cover-view>
+        <cover-view class="nav-item">
+          <cover-image src='/images/帮我做.png' style='width:45px;height:43px;' bindtap='navigateBtn4'></cover-image>
+          <cover-view>帮我做</cover-view>
+        </cover-view>
+      </cover-view>
+  </map>
+</view>
+</view>
